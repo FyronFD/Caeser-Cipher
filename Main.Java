@@ -33,7 +33,7 @@ public class Main {
     }
 
     public static char evaluateCharacter(char letterAtPosition, boolean upperCase){
-        if(upperCase){//Uses Recursion to make the lowercase version of that character change, then places it back in uppercase form
+        if(upperCase){//Makes the lowercase version of that character, then places it back in uppercase form after changing it
             letterAtPosition = Character.toLowerCase(letterAtPosition);
             char lowerCase = evaluateCharacter(letterAtPosition, false);
             char newChar = Character.toUpperCase(lowerCase);
