@@ -7,10 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
         //Asks User for their message and how many letters to shift by
-	    Scanner input = new Scanner(System.in);
-	    System.out.print("What is your message? ");
-	    String userMessage = input.nextLine();
-	    System.out.print("How many letters would you like to shift by? ");
+	Scanner input = new Scanner(System.in);
+	System.out.print("What is your message? ");
+	String userMessage = input.nextLine();
+	System.out.print("How many letters would you like to shift by? ");
         shift = input.nextInt();
 
         // Gets the length of the message and turns it into a char array
