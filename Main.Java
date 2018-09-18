@@ -42,7 +42,9 @@ public class Main {
             int ascii = letterAtPosition;
             if (ascii + shift > 122){
                 ascii = 96 + (ascii + shift - 122);
-            } else {
+            }else if(ascii + shift < 97){
+		ascii = 123 + (97 - ascii + shift);    
+	    }else{
                 ascii = ascii + shift;
             }
             char newChar = (char)ascii;
